@@ -31,10 +31,12 @@ while user_input != "q":
         print(todo)
 
     elif user_input == "2":
-        print(todos)
+        print("***** Here is your Todo list: *****")
+        for index in range(0, len(todos), 1):
+                print(index, todos[index])
         delete_todo = int(
             input("Enter the index of the task you want to delete? "))
-        del todos[delete_todo - 1]
+        del todos[delete_todo]
 
     elif user_input == "3":
         print("***** Here is your Todo list: *****")
