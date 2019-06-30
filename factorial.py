@@ -1,4 +1,4 @@
-
+"""
 # Is asking user for a number to find the factorial and stores it into the number variable.
 number = int(input("Enter number for factorial: "))
 
@@ -13,4 +13,18 @@ while(number > 0):
     number -= 1
 
 # Print string interopolation and inject factorial variable to terminal for user to see their number they entered factorial.
-print(f"The factorial for the number you entered is {factorial}!")
+print(f"The factorial for the number you entered is {factorial}!")"""
+
+
+def factorial():
+    number = int(input("Enter a number: "))
+    factorial = 1
+
+    while number > 0:
+        factorial = factorial * number
+        number = number - 1
+
+    print(factorial)
+
+
+factorial()
