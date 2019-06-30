@@ -20,7 +20,7 @@ except:
 number = 10
 
 try:
-    #number = int("a")
+    number = int("a")
     #result = 1 / 0
 except ValueError:
     print("Please enter the correct value!")
