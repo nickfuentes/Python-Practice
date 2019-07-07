@@ -13,12 +13,12 @@ def print_menu():
 
 user_input = ""
 
+
 with open("todo-list-with-files.json") as file_object:
-    json_data = json.load(file_object)
-todos.append(json_data)
+    todos = json.load(file_object)
+
 
 while user_input != "q":
-    # need to add json data into an empty array when app starts
     print_menu()
     user_input = input("What would you like to do? ")
 
