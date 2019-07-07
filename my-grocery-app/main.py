@@ -34,7 +34,7 @@ while user_input != "q":
             grocery_item = GroceryItem(item_name, item_price, item_quantity)
             shopping_list.grocery_items.append(grocery_item)
             user_input = input(
-                "Would you like to add another item? yes = [y] / no = [n] ")
+                "Would you like to add another item? (y/n) ")
         for shopping_list in shopping_lists:
             print("--------------------------------")
             print("***** Grocery List Created *****")
@@ -63,7 +63,7 @@ while user_input != "q":
             grocery_item = GroceryItem(item_name, item_price, item_quantity)
             shopping_list.grocery_items.append(grocery_item)
             user_input = input(
-                "Would you like to add another item? yes = [y] / no = [n] ")
+                "Would you like to add another item? (y/n)")
     elif user_input == "3":
         print("--------------------------------")
         print("****** Your Shopping Lists *****")
